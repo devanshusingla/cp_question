@@ -3,10 +3,13 @@ first self made cp question for pclub secy test
 
 ##				Earth vs Fighting
 
-There is tournament of pokemon to test whether ground pokemon are faster or fighting type pokemons. In the tournament, dugtrio is representing ground pokemon and lucario is representing fighting type pokemons. Both pokemons start at their initial position `t`<sub>`0`</sub> and `b`<sub>`0`</sub>.Dugtrio and Lucario take time `T`<sub>`1`</sub> and `T`<sub>`2`</sub> respectively. Lucario has to move on pillars, with top of pillar `i` represented by `b`<sub>`i`</sub>. Dugtrio has to go through tunnels linked at some places, which each such place `i` represented by `t`<sub>`i`</sub>. There are `n`<sub>`2`</sub> pillars and lucario has to reach to pillar `n`<sub>`2`</sub>`-1` to win. The pillars between which Lucario can jump are `p1`<sub>`i`</sub> and `p2`<sub>`i`</sub> and number of such possible jumps are `m`<sub>`1`</sub>. There are `n`<sub>`1`</sub> interlinks between tunnels and dugtrio has to reach end of this tunnel maze which is at `n`<sub>`1`</sub>`-1`. The tunnels are joined by `a`<sub>`i`</sub>. You have to place your bet on one pokemon. On which pokemon will you place your bet to become richer?
+There is tournament of pokemon to test whether ground pokemon are faster or fighting type pokemons. In the tournament, dugtrio is representing ground pokemon and lucario is representing fighting type pokemons. Both pokemons start at their initial position `t`<sub>`0`</sub> and `b`<sub>`0`</sub>.Dugtrio and Lucario take time `T`<sub>`1`</sub> and `T`<sub>`2`</sub> respectively. Lucario has to move on pillars, with top of pillar `i` represented by `b`<sub>`i`</sub>. Dugtrio has to go through tunnels linked at some places, which each such place `i` represented by `t`<sub>`i`</sub>. There are `n`<sub>`2`</sub> pillars and lucario has to reach to pillar `n`<sub>`2`</sub>`-1` to win. The pillars between which Lucario can jump are `p`<sub>`i`</sub> and `p`<sub>`j`</sub> and number of such possible jumps are `m`<sub>`1`</sub>. There are `n`<sub>`1`</sub> interlinks between tunnels and dugtrio has to reach end of this tunnel maze which is at `n`<sub>`1`</sub>`-1`. The tunnels are joined by `a`<sub>`i`</sub> and `a`<sub>`j`</sub>. You have to place your bet on one pokemon. On which pokemon will you place your bet to become richer?
 
 values of `b`<sub>`i`</sub> and `t`<sub>`j`</sub> are `i` and `j` respectively and `i` and `j` belong to `(0, n`<sub>`1`</sub>`)` and `(0, n`<sub>`2`</sub>`)` respectively.
 
+the distance between two points is sum of absolute difference between coordinates
+distance between top of pillars = |x<sub>i</sub>-x<sub>j</sub>| + |y<sub>i</sub>-y<sub>j</sub>| + |z<sub>i</sub>-z<sub>j</sub>|
+distance of a tunnel = |x<sub>i</sub>-x<sub>j</sub>| + |y<sub>i</sub>-y<sub>j</sub>|
 `2<=n`<sub>`1`</sub>`, n`<sub>`2`</sub>`<=20`
 `0<=coordinates<=1000000`
 
